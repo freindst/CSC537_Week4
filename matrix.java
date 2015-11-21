@@ -14,6 +14,7 @@ public class matrix {
 		this.number = 0;
 	}
 	
+	//initial a matrix with two-dimension array, rows, columns, and number of non-zeros
 	public matrix(int[][] m, int row, int column, int number)
 	{
 		this.m = m;
@@ -22,6 +23,7 @@ public class matrix {
 		this.number = number;
 	}
 	
+	//Create a matrix with given row, column and number of non-zero digits
 	public matrix(int row, int column, int number) throws Exception
 	{
 		if (number >= row * column)
@@ -77,6 +79,7 @@ public class matrix {
 		}
 	}
 	
+	//convert the matrix to Yale algorithm
 	public Yale toYale()
 	{
 		int[] A = new int[this.number];
